@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+    <script>
+
+        function loadUser() {
+
+            let nomeUser = document.getElementById("txt-nome").value;
+            window.alert(`Bem vindo, ${nomeUser} ao meu Website`);
+
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Aula 03 - Capiturando dados de um formulário HTML</h1>
+    <form name="frm-cadastro" id="frm-cadastro">
+        <label>Digite seu nome:</label>
+        <input type="text" name="txt-nome" id="txt-nome" value="">
+        <input type="button" name="btn-salvar" id="btn-salvar" value="Salvar Dados" onclick="loadUser()">
+    </form>
+</body>
+
+</html>
